@@ -1,0 +1,26 @@
+FUNCTION dot_product(v1,v2 : ARRAY_OF Number[20];) : integer
+VAR
+    i,dot:integer
+BEGIN
+    dot:=0;
+    i:=0
+    IF (v1.length <> v2.length) THEN
+        RETURN NaN ;
+    END_IF
+    
+END
+
+
+
+ALGORITHM orth_vectors
+VAR
+    v1,v2: ARRAY_OF integer[20];
+    dot:integer:=0
+BEGIN
+    dot:=dot_product(v1,v2)
+    IF (dot=0) THEN
+        write("v1 and v2 are orthogonal")
+    ELSE
+        write("v1 and v2 are not orthogonal")
+    END_IF
+END
